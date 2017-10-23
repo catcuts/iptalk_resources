@@ -1,20 +1,39 @@
-# install_setuptools_pip_wheel.sh
-sudo apt-get remove pip
-sudo apt-get update && \
+pip > /etc/null
+if [ $? -eq 0 ]
+then echo "removing existed pip ..." && \
+	 sudo apt-get remove pip -y && \
+     echo "pip removed. Updating ..."
+else echo "Updating ..."
+fi  && \
+sudo apt-get update -y && \
+echo "updated. Changing dir to /home/pi" && \
 cd /home/pi && \
-wget https://pypi.python.org/packages/45/29/8814bf414e7cd1031e1a3c8a4169218376e284ea2553cc0822a6ea1c2d78/setuptools-36.6.0.zip#md5=74663b15117d9a2cc5295d76011e6fd1 && \
-wget https://pypi.python.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz#md5=35f01da33009719497f01a4ba69d63c9 && \
+echo "/home/pi: downloading setuptools and pip packages ..." && \
+sudo cp -p /home/pi/iptalk_resources/packages/setuptools-36.6.0.zip /home/pi/setuptools-36.6.0.zip && \
+sudo cp -p /home/pi/iptalk_resources/packages/pip-9.0.1.tar.gz /home/pi/pip-9.0.1.tar.gz && \
+echo "/home/pi: setuptools and pip downloaded. Unziping setuptools ..." && \
 unzip setuptools-36.6.0 && \
+echo "/home/pi: setuptools unzipped. Changing dir to setuptools-36.6.0" && \
 cd setuptools-36.6.0 && \
+echo "/home/pi/setuptools-36.6.0: installing setuptools ..." && \
 python setup.py install && \
+echo "/home/pi/setuptools-36.6.0: setuptools installed. Changing dir to /home/pi ..." && \
 cd /home/pi && \
+echo "/home/pi: unpackaging pip ..." && \
 tar -xzf pip-9.0.1.tar.gz && \
+echo "/home/pi: pip unpackaged. Changing dir to pip-9.0.0 ..." && \
 cd pip-9.0.1 && \
+echo "/home/pi/pip-9.0.0: installing pip ..." && \
 python setup.py install && \
+echo "/home/pi/pip-9.0.0: pip installed. Correcting pip path" && \
 type pip && \
 sleep 1 && \
 hash -r && \
 sleep 1 && \
+echo "/home/pi/pip-9.0.0: pip path corrected. Changing dir to /home/pi" && \
+cd /home/pi && \
+echo "/home/pi: installing wheel ..." && \
 pip install wheel && \
+echo "wheel installed. pip listing ..." && \
 echo "please check: " && \
 pip list
