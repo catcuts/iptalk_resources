@@ -3,7 +3,7 @@
 dpkg -l pip > /etc/null
 if [ $? -eq 0 ]
 then echo "removing existed pip ..." && \
-	 sudo apt-get remove pip -y && \
+	 sudo apt-get remove -y pip && \
      echo "pip removed. Updating ..."
 else echo "Updating ..."
 fi  && \
