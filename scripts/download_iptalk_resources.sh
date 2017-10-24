@@ -14,3 +14,4 @@ if [ $? -ne 0 ]
 then cd iptalk_resources && git pull 
 fi && \
 echo -e "\t-------- download_iptalk_resources.sh fishished --------"
+# bash /home/pi/iptalk_rescources/scripts/main.sh

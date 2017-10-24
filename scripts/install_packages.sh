@@ -53,6 +53,14 @@ echo -e "\t\tpip path corrected. Changing dir to /home/pi/iptalk_resources ..." 
 # install other dependencies python packages for iptalk application
 cd /home/pi/iptalk_resources && \
 echo "/home/pi/iptalk_resources: " && \
+
+echo -e "\tinstalling dev environments ..." && \
+sudo apt-get install -y python-dev && \
+sudo apt-get install -y libmysqld-dev && \
+sudo apt-get install -y libffi-dev && \
+sudo apt-get install -y libssl-dev && \
+echo -e "\tdev environments installed" && \
+
 echo -e "\tinstalling packages ..." && \
 cat requirements.txt | while read line
 do
