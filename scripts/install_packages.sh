@@ -1,6 +1,6 @@
 # install_packages.sh
 # check whether it is needed to removing existed low-version pip
-echo -e "\t-------- install_packages.sh downloading --------" && \
+echo -e "\t-------- install_packages.sh started --------" && \
 dpkg -l pip > /etc/null
 if [ $? -eq 0 ]
 then echo "removing existed pip ..." && \

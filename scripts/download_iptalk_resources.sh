@@ -1,5 +1,5 @@
 # download_iptalk_resources.sh
-echo -e "\t-------- download_iptalk_resources.sh started --------"
+echo -e "\t-------- download_iptalk_resources.sh started --------" && \
 cd /home/pi && \
 git > /etc/null
 if [ $? -eq 0 ]

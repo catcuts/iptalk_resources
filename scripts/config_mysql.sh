@@ -1,10 +1,10 @@
 # config_mysql.sh
-echo -e "\t-------- config_mysql.sh started --------"
+echo -e "\t-------- config_mysql.sh started --------" && \
 mysql -uroot -proot <<EOF
 	use mysql;
 	update user set host='%' where user='root' and host='localhost';
 	create database iptalk;
-EOF && \
+EOF
 echo -e "\tMysql stopping ..." && \
 sudo /etc/init.d/mysql stop && \
 echo -e "\tMysql stopped. Mysql configing ..." && \
