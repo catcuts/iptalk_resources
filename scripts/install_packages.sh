@@ -68,7 +68,7 @@ do
    	echo -e "\tinstalling" $line " ..." && \
    	pkg=`tr A-Z a-z <<< $line`
    	if [ pkg == twisted ]
-   	then sudo apt-get install -y python-Twisted
+   	then pip install Twisted -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
    	else sudo pip install --no-index --find-links=/home/pi/iptalk_resources/packages $line 
    	fi && \
    	echo -e "\t" $line " installed." 
