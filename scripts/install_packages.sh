@@ -67,7 +67,7 @@ do
 	echo -e "---------- ---------- ----------" && \
    	echo -e "\tinstalling" $line " ..." && \
    	pkg=`tr A-Z a-z <<< $line`
-   	if [ pkg == twisted ]
+   	if [[ $pkg =~ twisted(\>\=.*)* ]]
    	then pip install Twisted -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
    	else sudo pip install --no-index --find-links=/home/pi/iptalk_resources/packages $line 
    	fi && \
