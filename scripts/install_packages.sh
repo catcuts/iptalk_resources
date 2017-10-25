@@ -64,14 +64,14 @@ echo -e "\tdev environments installed" && \
 echo -e "\tinstalling packages ..." && \
 cat requirements.txt | while read line
 do
-	echo -e "---------- ---------- ----------" && \
    	echo -e "\tinstalling" $line " ..." && \
+   	# pip install $line -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
    	pkg=`tr A-Z a-z <<< $line`
    	if [[ $pkg =~ twisted(\>\=.*)* ]]
    	then pip install Twisted -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
    	else sudo pip install --no-index --find-links=/home/pi/iptalk_resources/packages $line 
    	fi && \
-   	echo -e "\t" $line " installed." 
+   	echo -e "\t----------" $line " installed. ----------" 
 done && \
 echo -e "\t-------- all pkgs installed --------" && \
 
