@@ -55,14 +55,16 @@ cd /home/pi/iptalk_resources && \
 echo "/home/pi/iptalk_resources: " && \
 
 echo -e "\tinstalling dev environments ..." && \
-sudo apt-get install -y python-dev && \
-sudo apt-get install -y libmysqld-dev && \
-sudo apt-get install -y libffi-dev && \
-sudo apt-get install -y libssl-dev && \
+for dev in python-dev libmysqld-dev libffi-dev libssl-dev
+do
+	if [ $[`dpkg -l | grep $dev > /etc/null`] -ne 0 ]
+	then sudo apt-get install -y $dev 
+	fi
+done && \
 echo -e "\tdev environments installed" && \
 
 echo -e "\tinstalling packages ..." && \
-cat requirements.txt | while read line
+cat /home/pi/iptalk_resources/requirements.txt | while read line
 do
    	echo -e "\tinstalling" $line " ..." && \
    	# pip install $line -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
@@ -71,7 +73,7 @@ do
    	then pip install Twisted -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
    	else sudo pip install --no-index --find-links=/home/pi/iptalk_resources/packages $line 
    	fi && \
-   	echo -e "\t----------" $line " installed. ----------" 
+   	echo -e "\t----------" $line "installed. ----------" 
 done && \
 echo -e "\t-------- all pkgs installed --------" && \
 

@@ -1,5 +1,5 @@
 # correct_timezone.sh
-echo -e "\t-------- correct_timezone.sh starting --------" && \
+echo -e "\t-------- correct_timezone.sh started --------" && \
 sudo apt-get update -y && \
 sudo apt-get install -y ntpdate && \
 echo "TZ='Asia/Shanghai'; export TZ" >> /root/.profile && \
