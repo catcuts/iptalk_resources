@@ -19,28 +19,28 @@ echo "/home/pi: " && \
 echo -e "\tdownloading setuptools and pip packages ..." && \
 sudo cp -p /home/pi/iptalk_resources/packages/setuptools-36.6.0.zip /home/pi/setuptools-36.6.0.zip && \
 sudo cp -p /home/pi/iptalk_resources/packages/pip-9.0.1.tar.gz /home/pi/pip-9.0.1.tar.gz && \
-echo -e "\tsetuptools and pip packages downloaded. Changing dir to /home/pi/packages ..." && \
+echo -e "\tsetuptools and pip packages downloaded. Changing dir to /home/pi/iptalk_resources/packages ..." && \
 
 # install setuptools first
-cd /home/pi/packages && \
-echo "/home/pi/packages: " && \
+cd /home/pi/iptalk_resources/packages && \
+echo "/home/pi/iptalk_resources/packages: " && \
 echo -e "\tUnziping setuptools ..." && \
 unzip -o setuptools-36.6.0 && \
 echo -e "\tsetuptools unzipped. Changing dir to setuptools-36.6.0" && \
 cd setuptools-36.6.0 && \
-echo "/home/pi/packages/setuptools-36.6.0: "
+echo "/home/pi/iptalk_resources/packages/setuptools-36.6.0: "
 echo -e "\t\tinstalling setuptools ..." && \
 python setup.py install && \
-echo -e "\t\tsetuptools installed. Changing dir to /home/pi/packages ..." && \
+echo -e "\t\tsetuptools installed. Changing dir to /home/pi/iptalk_resources/packages ..." && \
 
 # install pip after setuptools
-cd /home/pi/packages && \
-echo "/home/pi/packages: " && \
+cd /home/pi/iptalk_resources/packages && \
+echo "/home/pi/iptalk_resources/packages: " && \
 echo -e "\tunpackaging pip ..." && \
 tar -xzf pip-9.0.1.tar.gz && \
 echo -e "\tpip unpackaged. Changing dir to pip-9.0.0 ..." && \
 cd pip-9.0.1 && \
-echo "/home/pi/packages/pip-9.0.0: " && \
+echo "/home/pi/iptalk_resources/packages/pip-9.0.0: " && \
 echo -e "\t\tinstalling pip ..." && \
 python setup.py install && \
 echo -e "\t\tpip installed. Correcting pip path" && \
@@ -57,7 +57,8 @@ echo "/home/pi/iptalk_resources: " && \
 echo -e "\tinstalling dev environments ..." && \
 for dev in python-dev libmysqld-dev libffi-dev libssl-dev
 do
-	if [ $[`dpkg -l | grep $dev > /etc/null`] -ne 0 ]
+	found=`dpkg -l | grep $dev`
+  if [ -z "$found" ]
 	then sudo apt-get install -y $dev 
 	fi
 done && \
