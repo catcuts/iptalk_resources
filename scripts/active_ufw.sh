@@ -11,10 +11,10 @@ else
      echo -e "\tufw installed. ufw configing ..."
 fi  && \
 
+sudo ufw allow from 192.168.0.0/16 to any port 22 && \
+
+sudo ufw deny from any to any port 22 && \
+sudo ufw allow from any to any && \
 sudo ufw enable && \
-sudo ufw default deny && \
-sudo ufw allow from 10.0.0.0/8 && \
-sudo ufw allow from 172.16.0.0/12 && \
-sudo ufw allow from 192.168.0.0/16 && \
 
 echo -e "\t-------- active_ufw.sh started --------"
