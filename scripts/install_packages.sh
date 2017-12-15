@@ -10,15 +10,20 @@ else echo "Updating ..."
 fi  && \
 
 # update 
-sudo apt-get update -y && \
+bash /home/pi/iptalk_resources/scripts/correct_sources.sh && \
+#sudo apt-get update -y && \
 echo "updated. Changing dir to /home/pi ..." && \
 
 # download setuptools and packages
 cd /home/pi && \
 echo "/home/pi: " && \
 echo -e "\tdownloading setuptools and pip packages ..." && \
-sudo cp -p /home/pi/packages/setuptools-36.6.0.zip /home/pi/setuptools-36.6.0.zip && \
-sudo cp -p /home/pi/packages/pip-9.0.1.tar.gz /home/pi/pip-9.0.1.tar.gz && \
+cd /home/pi/packages > /etc/null
+if [ $? -nq 0 ]
+then mkdir /home/pi/packages
+fi && \
+sudo cp -p /home/pi/iptalk_resources/packages/setuptools-36.6.0.zip /home/pi/packages/setuptools-36.6.0.zip && \
+sudo cp -p /home/pi/iptalk_resources/packages/pip-9.0.1.tar.gz /home/pi/packages/pip-9.0.1.tar.gz && \
 echo -e "\tsetuptools and pip packages downloaded. Changing dir to /home/pi/iptalk_resources/packages ..." && \
 
 # install setuptools first
@@ -65,7 +70,7 @@ done && \
 echo -e "\tdev environments installed" && \
 
 echo -e "\tinstalling packages ..." && \
-cat /home/pi/requirements.txt | while read line
+cat /home/pi/iptalk_resources/requirements.txt | while read line
 do
    	echo -e "\tinstalling" $line " ..." && \
    	# pip install $line -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
