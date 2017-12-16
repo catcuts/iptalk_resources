@@ -1,9 +1,9 @@
 echo -e "\t======== making directories for data started ========" && \
-usbhdd_dir=/mnt/usbhdd
-ftp_dir=${usbhdd}"/ftp"
+data_dir=/home/pi/data
+ftp_dir=${data_dir}"/ftp"
 for dir_name in "" devices ftp logs messages record traceCoords upgrade users
 do
-  dir=${usbhdd_dir}"/"${dir_name}
+  dir=${data_dir}"/"${dir_name}
   if [ ! -d $dir ]
     then mkdir $dir
   fi
