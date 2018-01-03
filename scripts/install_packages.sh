@@ -110,7 +110,11 @@ for r in ${requirements[@]}
 do
   #echo $r
   if ! [[ "${installed[@]}" =~ $r ]]
-  then echo $r is not installed
+  then 
+  echo $r is not installed
+  # echo -e "\t" installing ... && \
+  # pip install $r && \
+  # echo -e "\t" $r is installed
   fi
 done
 
