@@ -19,7 +19,7 @@ cd /home/pi && \
 echo "/home/pi: " && \
 echo -e "\tdownloading setuptools and pip packages ..." && \
 cd /home/pi/packages > /etc/null
-if [ $? -nq 0 ]
+if [ $? -ne 0 ]
 then mkdir /home/pi/packages
 fi && \
 sudo cp -p /home/pi/iptalk_resources/packages/setuptools-36.6.0.zip /home/pi/packages/setuptools-36.6.0.zip && \
@@ -72,18 +72,54 @@ echo -e "\tdev environments installed" && \
 echo -e "\tinstalling packages ..." && \
 cat /home/pi/iptalk_resources/requirements.txt | while read line
 do
-   	echo -e "\tinstalling" $line " ..." && \
-   	# pip install $line -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-   	pkg=`tr A-Z a-z <<< $line`
-   	if [[ $pkg =~ twisted\>\=.* ]]
-   	then pip install Twisted -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-   	else sudo pip install --no-index --find-links=/home/pi/iptalk_resources/packages $line 
-   	fi && \
-   	echo -e "\t----------" $line "installed. ----------" 
+ 	echo -e "\tinstalling" $line " ..." && \
+ 	# pip install $line -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+ 	pkg=`tr A-Z a-z <<< $line`
+ 	if [[ $pkg =~ twisted\>\=.* ]]
+ 	then pip install Twisted -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+ 	else sudo pip install --no-index --find-links=/home/pi/iptalk_resources/packages $line 
+ 	fi && \
+ 	echo -e "\t----------" $line "installed. ----------" 
 done && \
-echo -e "\t-------- all pkgs installed --------" && \
+echo -e "\t-------- final check --------" && \
 
 # finnally check
-echo "please check: " && \
-pip list && \
+
+requirements=()
+while read line
+do
+  line=${line/%>=*/""}
+  requirements+=($line)
+done << EOT
+`cat /home/pi/iptalk_resources/requirements.txt`
+EOT
+#echo -e requirements "\n\t" ${requirements[@]}
+
+installed=()
+while read line
+do
+  #echo $line
+  line=${line/%\(*\)/""}
+  installed+=($line)
+done << EOT
+`pip list --format=legacy`
+EOT
+#echo -e installed "\n\t" ${installed[@]}
+
+for r in ${requirements[@]}
+do
+  #echo $r
+  if ! [[ "${installed[@]}" =~ $r ]]
+  then echo $r is not installed
+  fi
+done
+
+# cat /home/pi/iptalk_resources/requirements.txt | while read line
+# do
+#   line=${line/%>=*/""}
+#   installed=`pip list --format=legacy | grep $line`
+#   if [ -z "$installed" ]
+#   then echo $line is not installed
+#   fi
+# done && \
 echo -e "\t-------- install_packages.sh finished --------"
