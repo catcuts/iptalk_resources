@@ -82,13 +82,13 @@ RUN \
             wrapt>=1.10.8\n\
             xlwt>=1.2.0\n\
             xmltodict>=0.10.2\n\
-            zope.interface>=4.2.0\n' | while read pkg; \
+            zope.interface>=4.2.0' | while read pkg; \
         do \
             pip install $pkg -i http://pypi.douban.com/simple --trusted-host pypi.douban.com; \
-        done
+        done && \
 
 # extract iptalk server code into /home/pi/src
     wget ... -P /home/pi/ && \
     unzip /home/pi/iptalk.zip -d /home/pi/src && \
 
-CMD /usr/sbin/sshd -D && /home/pi/src/start.sh && bash
+CMD /usr/sbin/sshd -D && python /home/pi/src/test.py && bash
