@@ -4,12 +4,19 @@ RUN \
 # install all system dependencies
     apt-get update && apt-get install -y \
         gcc \
+        sudo \
         git \
         wget \
         unzip \
         python \
         ntpdate \ 
-        openssh-server && \
+        python-dev \
+        libffi-dev \
+        libssl-dev \
+        mysql-server \
+        mysql-client \
+        openssh-server \
+        default-libmysqlclient-dev && \
 
 # mkdir all will be used
     mkdir -p 
@@ -17,44 +24,70 @@ RUN \
         /home/pi/pkgs \
         /home/pi/ffmpeg && \
 
-# correct the time zone
-    echo "TZ='Asia/Shanghai'; export TZ" >> /root/.profile && \
-    sudo timedatectl set-timezone Asia/Chongqing && \
+# # correct the time zone
+#     echo "TZ='Asia/Shanghai'; export TZ" >> /root/.profile && \
+#     sudo timedatectl set-timezone Asia/Chongqing && \
 
 # fetch and extract the ffmpeg into /home/pi then move to /home/pi/ffmpeg    
-    cd /home/pi/packages
-    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
+    cd /home/pi/pkgs && \
+    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz && \
     tar -Jxf ffmpeg-release-64bit-static.tar.xz && \
-    mv ffmpeg-release-64bit-static.tar.xz /home/pi/ffmpeg && \
+    mv ffmpeg-3.4.1-64bit-static /home/pi/ffmpeg && \
 
 # install python packages
-    # install setuptools  
-        unzip /home/pi/iptalk_resources/packages/setuptools-36.6.0.zip -d /home/pi/pkgs && \
-        python /home/pi/pkgs/setuptools-36.6.0/setup.py install && \
-
-    # install pip 
+    # install pip alongwith setup-tools
         cd /home/pi/pkgs && \
-        tar -xzf /home/pi/iptalk_resources/packages/pip-9.0.1.tar.gz && \
-        python /home/pi/pkgs/pip-9.0.1/setup.py install && \
-        type pip && \
-        sleep 1 && \
-        hash -r && \
-        sleep 1 && \
-
-    # install dev
-        for dev in python-dev libmysqld-dev libffi-dev libssl-dev
-        do
-            found=`dpkg -l | grep $dev`
-          if [ -z "$found" ]
-            then sudo apt-get install -y $dev 
-            fi
-        done && \
+        wget https://bootstrap.pypa.io/get-pip.py && \
+        python get-pip.py && \
 
     # install python packages from douban source image
-        cat /home/pi/iptalk_resources/requirements.txt | while read pkg
+        while read pkg
         do
             pip install $pkg -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-        done && \
+        done << EOT
+            cffi>=1.10.0
+            asn1crypto>=0.22.0
+            astroid>=1.5.3
+            attrs>=17.2.0
+            backports.functools-lru-cache>=1.4
+            bcrypt>=3.1.3
+            Beaker>=1.8.0
+            colorama>=0.3.9
+            configobj>=5.0.6
+            configparser>=3.5.0
+            cryptography>=2.0.3
+            enum34>=1.1.6
+            funcsigs>=1.0.2
+            idna>=2.5
+            igetui>=4.0.3
+            ipaddress>=1.0.18
+            isort>=4.2.15
+            lazy-object-proxy>=1.3.1
+            m3u8-generator>=1.5
+            mccabe>=0.6.1
+            MySQL-python>=1.2.5
+            optionaldict>=0.1.1
+            peewee>=2.8.5
+            pyasn1>=0.3.2
+            pyasn1-modules>=0.0.9
+            pycparser>=2.18
+            PyNaCl>=1.1.2
+            paramiko>=2.2.1
+            pyOpenSSL>=17.0.0
+            python-dateutil>=2.5.3
+            requests>=2.10.0
+            singledispatch>=3.4.0.3
+            six>=1.10.0
+            service-identity>=17.0.0
+            Twisted>=16.3.0
+            TwistedWebsocket>=0.0.7
+            virtualenv>=15.1.0
+            wechatpy>=1.2.13
+            wrapt>=1.10.8
+            xlwt>=1.2.0
+            xmltodict>=0.10.2
+            zope.interface>=4.2.0
+        EOT && \
 
 # extract iptalk server code into /home/pi/src
     wget ... -P /home/pi/ && \
