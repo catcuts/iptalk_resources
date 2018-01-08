@@ -1,5 +1,14 @@
 FROM debian:latest
 
+ENV \
+    MYSQL_HOST="127.0.0.1" \
+    MYSQL_PORT=3306 \
+    IPTALK_DATABASE="iptalk" \
+    MYSQL_USERNAME="root" \
+    MYSQL_PASSWORD="root"
+
+COPY ./iptalk.zip /home/pi/
+
 RUN \
 # install all system dependencies
     apt-get update && apt-get install -y \
@@ -88,7 +97,22 @@ RUN \
         done && \
 
 # extract iptalk server code into /home/pi/src
-    wget ... -P /home/pi/ && \
-    unzip /home/pi/iptalk.zip -d /home/pi/src && \
+    unzip /home/pi/iptalk.zip -d /home/pi/src
 
-CMD /usr/sbin/sshd -D && python /home/pi/src/test.py && bash
+# volume data file to anonyous
+VOLUME /home/pi/src/data
+
+CMD ["start.sh"]
+
+# to run this container use:
+# docker run \
+#        --name=<container_name> \
+#        --link=<mysql_container_name> \
+#        -p <host_ports>:<container_ports> \
+#        [-d | -i | -t] \
+#        [-e MYSQL_HOST=<mysql_host>] \
+#        [-e MYSQL_PORT=<mysql_port>] \
+#        [-e IPTALK_DATABASE=<iptalk_db_name>] \
+#        [-e MYSQL_USERNAME=<mysql_username>] \
+#        [-e MYSQL_PASSWORD=<mysql_password>] \
+#        [-v /path@host/to/settings_folder:/home/pi/src/settings]
