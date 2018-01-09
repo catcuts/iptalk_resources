@@ -109,7 +109,7 @@ CMD ["start.sh"]
 #        --name=<container_name> \
 #        --link=<mysql_container_name> \
 #        -p <host_ports>:<container_ports> \
-#        [-d | -i | -t] \
+#        [-d | -it] \
 #        [-e MYSQL_HOST=<mysql_host>] \
 #        [-e MYSQL_PORT=<mysql_port>] \
 #        [-e IPTALK_DATABASE=<iptalk_db_name>] \
