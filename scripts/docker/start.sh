@@ -1,25 +1,37 @@
 #!/usr/bin/bash
 
+awk 'BEGIN { cmd="cp -ri /home/pi/tmp/data/* /home/pi/src/data"; print "n" |cmd; }'
+awk 'BEGIN { cmd="cp -ri /home/pi/tmp/settings/* /home/pi/src/settings"; print "n" |cmd; }'
+
+setting_file=/home/pi/src/settings/default.ini
+
+echo $MYSQL_HOST
+echo $MYSQL_PORT
+echo $IPTALK_DATABASE
+echo $MYSQL_USERNAME
+echo $IPTALK_PASSWORD
+
 if [[ -e $MYSQL_HOST ]]; then
-    sed "s/host\s*=\s*.*/host = $MYSQL_HOST/"
+    sed "s/host\s*=\s*.*/host = $MYSQL_HOST/" $setting_file
 fi
 
 if [[ -e $MYSQL_PORT ]]; then
-    sed "s/port\s*=\s*.*/port = $MYSQL_PORT/"
+    sed "s/port\s*=\s*.*/port = $MYSQL_PORT/" $setting_file
 fi
 
 if [[ -e $IPTALK_DATABASE ]]; then
-    sed "s/iptalkdatabase\s*=\s*.*/iptalkdatabase = $IPTALK_DATABASE/"
+    sed "s/iptalkdatabase\s*=\s*.*/iptalkdatabase = $IPTALK_DATABASE/" $setting_file
 fi
 
 if [[ -e $MYSQL_USERNAME ]]; then
-    sed "s/user\s*=\s*.*/user = $MYSQL_USERNAME/"
+    sed "s/user\s*=\s*.*/user = $MYSQL_USERNAME/" $setting_file
 fi
 
 if [[ -e $IPTALK_PASSWORD ]]; then
-    sed "s/password\s*=\s*.*/password = $IPTALK_PASSWORD/"
+    sed "s/password\s*=\s*.*/password = $IPTALK_PASSWORD/" $setting_file
 fi
 
-mkdir -p /var/run/sshd && \
-/usr/sbin/sshd -D &
-python /home/pi/src/test.py
+mkdir -p /var/run/sshd > /etc/null && \
+/usr/sbin/sshd -D & \
+sudo service mysql start > /home/pi/log.txt 2>&1 && \
+python /home/pi/src/iptalk.py

@@ -1,0 +1,270 @@
+2017-09-29 13:31:38+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4.4
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'device' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'deviceled' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'user' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'api_visitor' already exists")
+2017-09-29 13:31:40+0800 [INFO] (1050, "Table 'callstrategy' already exists")
+2017-09-29 13:31:41+0800 [INFO] TreeNode has been initialized
+2017-09-29 13:31:41+0800 [INFO] FeedBack has been initialized
+2017-09-29 13:31:41+0800 [INFO] Administrator has been initialized
+2017-09-29 13:31:41+0800 [INFO] Opened iptalk.db successfully
+2017-09-29 13:31:42+0800 [INFO] OrderFactory starting on 12200
+2017-09-29 13:31:42+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x000000000566E308>
+2017-09-29 13:31:42+0800 [INFO] QueryFactory starting on 34952
+2017-09-29 13:31:42+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x00000000056F1488>
+2017-09-29 13:31:42+0800 [INFO] AudioFactory starting on 3478
+2017-09-29 13:31:42+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x0000000005735B08>
+2017-09-29 13:31:42+0800 [INFO] VideoFactory starting on 3456
+2017-09-29 13:31:42+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x00000000057388C8>
+2017-09-29 13:31:42+0800 [INFO] IPTalkWebSite starting on 85
+2017-09-29 13:31:42+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x0000000005738C08>
+2017-09-29 13:31:42+0800 [INFO] WebSocketFactory starting on 89
+2017-09-29 13:31:42+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x0000000005745DC8>
+2017-09-29 13:31:42+0800 [INFO] TCPPushFactory starting on 90
+2017-09-29 13:31:42+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x00000000057662C8>
+2017-09-29 13:31:42+0800 [INFO] SearchFactory starting on 3550
+2017-09-29 13:31:42+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x0000000005766788>
+2017-09-29 13:31:42+0800 [INFO] MyFTPFactory starting on 21
+2017-09-29 13:31:42+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x0000000005766B08>
+2017-09-29 13:31:49+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49162) .
+2017-09-29 13:31:49+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:31:49+0800 [INFO] websocket is connected.
+2017-09-29 13:32:16+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:15 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:16+0800 [INFO] delete websock TCP connect:48f34935fd6e4ecb8cc654523b5f9c91
+2017-09-29 13:32:17+0800 [INFO] websocket is disconnected.
+2017-09-29 13:32:17+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:16 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:17+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:16 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:19+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:18 +0000] "GET /build/1.0/assets/apps/iptalk/commander.chunk.js HTTP/1.1" 200 229727 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:21+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49174) .
+2017-09-29 13:32:21+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:32:21+0800 [INFO] websocket is connected.
+2017-09-29 13:32:21+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:21 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 200 11173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:22+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:21 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:22+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:21 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:24+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:23 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:24+0800 [INFO] delete websock TCP connect:d00c09a147d942ecaffb62e3718ed361
+2017-09-29 13:32:24+0800 [INFO] websocket is disconnected.
+2017-09-29 13:32:24+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:23 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 304 - "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:24+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:24 +0000] "GET /build/1.0/assets/apps/iptalk/home.chunk.js HTTP/1.1" 200 455583 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:26+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49185) .
+2017-09-29 13:32:26+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:32:26+0800 [INFO] websocket is connected.
+2017-09-29 13:32:26+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:25 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 304 - "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:26+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:25 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:26+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:25 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 258 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:26+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:26 +0000] "GET /devices/iptalk/getiptalktreenodebyid?id=custom HTTP/1.1" 200 228 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:27+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:26 +0000] "GET /build/1.0/assets/images/line_conn.a2649b.gif HTTP/1.1" 200 45 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:27+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:26 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:27+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:26 +0000] "GET /devices/iptalk/getiptalkdevicelistbytreenodeid?treeNodeID=custom&type=1&newPage=1&pageSize=20 HTTP/1.1" 200 6242 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:31+0800 [INFO] delete websock TCP connect:6fe79da9e76c40e3b8bb75c7c9c17e47
+2017-09-29 13:32:31+0800 [INFO] websocket is disconnected.
+2017-09-29 13:32:35+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49197) .
+2017-09-29 13:32:35+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:32:35+0800 [INFO] websocket is connected.
+2017-09-29 13:32:37+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:36 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:37+0800 [INFO] delete websock TCP connect:a7916739b6d849c1ac5c4257c173486b
+2017-09-29 13:32:37+0800 [INFO] websocket is disconnected.
+2017-09-29 13:32:37+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:36 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:37+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:36 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:37+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:37 +0000] "GET /build/1.0/assets/apps/iptalk/home.chunk.js HTTP/1.1" 200 455583 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49200) .
+2017-09-29 13:32:39+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:32:39+0800 [INFO] websocket is connected.
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:38 +0000] "GET /devices/iptalk/getiptalktreenodebyid?id=custom HTTP/1.1" 200 228 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:38 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:38 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 258 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:38 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 200 11173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:38 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:38 +0000] "GET /devices/iptalk/getiptalkdevicelistbytreenodeid?treeNodeID=custom&type=1&newPage=1&pageSize=20 HTTP/1.1" 200 6242 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:39+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:39 +0000] "GET /build/1.0/assets/images/line_conn.a2649b.gif HTTP/1.1" 200 45 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:42+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:41 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 200 611031 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:32:42+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:32:41 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:33:55+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:33:54 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:33:58+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:33:57 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506355200&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:34:00+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:33:59 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506355200&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:34:03+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:34:02 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506355200&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:42:48+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:42:48 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:42:48+0800 [INFO] delete websock TCP connect:ce9ca115c28b44e6b872fafefb95031b
+2017-09-29 13:42:48+0800 [INFO] websocket is disconnected.
+2017-09-29 13:42:48+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:42:48 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:42:48+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:42:48 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:42:49+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:42:49 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 200 611216 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:42:50+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49419) .
+2017-09-29 13:42:50+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:42:50+0800 [INFO] websocket is connected.
+2017-09-29 13:42:51+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:42:51 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:42:51+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:42:51 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:46:10+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:46:10 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:46:10+0800 [INFO] delete websock TCP connect:69fa419459634d6caae21049ca5804ee
+2017-09-29 13:46:10+0800 [INFO] websocket is disconnected.
+2017-09-29 13:46:10+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:46:10 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:46:10+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:46:10 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:46:11+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:46:11 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 200 611216 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:46:12+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 49597) .
+2017-09-29 13:46:12+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 13:46:12+0800 [INFO] websocket is connected.
+2017-09-29 13:46:13+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:46:12 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 13:46:13+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:05:46:13 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:00:30+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:00:29 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:00:30+0800 [INFO] delete websock TCP connect:cfc29f4730f34539b2b4c203a3c1a034
+2017-09-29 14:00:30+0800 [INFO] websocket is disconnected.
+2017-09-29 14:00:30+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:00:30 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 304 - "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:00:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:00:31 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 304 - "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:00:32+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:00:32 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:00:32+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 50318) .
+2017-09-29 14:00:32+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 14:00:32+0800 [INFO] websocket is connected.
+2017-09-29 14:00:32+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:00:32 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:02+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:02 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:02+0800 [INFO] delete websock TCP connect:4c2e95d9a5d347e2bbcdbc8f45eb3979
+2017-09-29 14:03:02+0800 [INFO] websocket is disconnected.
+2017-09-29 14:03:02+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:02 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:02+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:02 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:03+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:03 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 200 611156 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:04+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 50357) .
+2017-09-29 14:03:04+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 14:03:04+0800 [INFO] websocket is connected.
+2017-09-29 14:03:04+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:04 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:04+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:04 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:09 +0000] "GET /build/1.0/assets/apps/iptalk/commander.chunk.js HTTP/1.1" 200 229727 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:09 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 200 11173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:03:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:03:09 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:04:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:04:30 +0000] "GET /build/1.0/assets/apps/iptalk/home.chunk.js HTTP/1.1" 200 455583 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:04:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:04:30 +0000] "GET /devices/iptalk/getiptalktreenodebyid?id=custom HTTP/1.1" 200 228 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:04:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:04:31 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 258 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:04:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:04:31 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:04:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:04:31 +0000] "GET /devices/iptalk/getiptalkdevicelistbytreenodeid?treeNodeID=custom&type=1&newPage=1&pageSize=20 HTTP/1.1" 200 6242 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:04:31+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:04:31 +0000] "GET /build/1.0/assets/images/line_conn.a2649b.gif HTTP/1.1" 200 45 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:06+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:06 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:06+0800 [INFO] delete websock TCP connect:fc1f1dbb2ac94e468b28d9820e905faa
+2017-09-29 14:05:06+0800 [INFO] websocket is disconnected.
+2017-09-29 14:05:07+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:06 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:07+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:06 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:07+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:07 +0000] "GET /build/1.0/assets/apps/iptalk/home.chunk.js HTTP/1.1" 200 455583 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:08+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 50400) .
+2017-09-29 14:05:08+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 14:05:08+0800 [INFO] websocket is connected.
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:08 +0000] "GET /devices/iptalk/getiptalktreenodebyid?id=custom HTTP/1.1" 200 228 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:08 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:08 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 258 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:08 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:09 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 200 11173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:09 +0000] "GET /devices/iptalk/getiptalkdevicelistbytreenodeid?treeNodeID=custom&type=1&newPage=1&pageSize=20 HTTP/1.1" 200 6242 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:09 +0000] "GET /build/1.0/assets/images/line_conn.a2649b.gif HTTP/1.1" 200 45 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:11+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:11 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 200 611156 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:05:12+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:05:11 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:17+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:17 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:18+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:17 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:18+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:18 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:19+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:18 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:19+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:18 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:19+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:19 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:06:19+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:06:19 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1504627200&endDate=1506700800&device= HTTP/1.1" 200 5402 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:13:43+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:13:42 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:13:43+0800 [INFO] delete websock TCP connect:ff516beda5db4e068c81d52f87b8b211
+2017-09-29 14:13:43+0800 [INFO] websocket is disconnected.
+2017-09-29 14:13:43+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:13:42 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:13:43+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:13:42 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:13:44+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:13:43 +0000] "GET /build/1.0/assets/apps/iptalk/callRecord.chunk.js HTTP/1.1" 200 611216 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:13:45+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 50575) .
+2017-09-29 14:13:45+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 14:13:45+0800 [INFO] websocket is connected.
+2017-09-29 14:13:45+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:13:45 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:13:45+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:13:45 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1506614400&endDate=1506700800&device= HTTP/1.1" 200 128 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:04+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:03 +0000] "GET /build/1.0/assets/apps/iptalk/commander.chunk.js HTTP/1.1" 200 229727 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:04+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:03 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 200 11173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:04+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:03 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:06+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:06 +0000] "GET /build/1.0/assets/components/video.operate.chunk.js HTTP/1.1" 200 24939 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:06+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:06 +0000] "GET /js/video.js/dist/video-js.min.css HTTP/1.1" 200 45774 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:06+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:06 +0000] "GET /js/video.js/dist/video.min.js HTTP/1.1" 200 184435 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:06+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:06 +0000] "GET /js/videojs-contrib-hls/dist/videojs-contrib-hls.min.js HTTP/1.1" 200 224919 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:07+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:06 +0000] "GET /recstoreage/28888888_10000130_20170927_113554.ts_playlist.m3u8 HTTP/1.1" 200 173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:15:07+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:15:07 +0000] "GET /recstoreage/28888888_10000130_20170927_113554.ts_000.ts HTTP/1.1" 200 525084 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:01+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:01 +0000] "GET /build/1.0/test.html HTTP/1.1" 200 426 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:01+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:01 +0000] "GET /build/1.0/assets/common.bundle.js HTTP/1.1" 200 778872 "http://192.168.116.32:85/build/1.0/test.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:01+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:01 +0000] "GET /build/1.0/assets/test.bundle.js HTTP/1.1" 200 636598 "http://192.168.116.32:85/build/1.0/test.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:02+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:02 +0000] "GET /build/1.0/assets/test/index.chunk.js HTTP/1.1" 200 7238 "http://192.168.116.32:85/build/1.0/test.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:02+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:02 +0000] "GET /build/1.0/assets/test/lth/video.chunk.js HTTP/1.1" 200 28116 "http://192.168.116.32:85/build/1.0/test.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:03+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:02 +0000] "GET /js/video.js/dist/video-js.min.css HTTP/1.1" 200 45774 "http://192.168.116.32:85/build/1.0/test.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:03+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:02 +0000] "GET /js/video.js/dist/video.min.js HTTP/1.1" 200 184435 "http://192.168.116.32:85/build/1.0/test.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:08+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:08 +0000] "GET /build/1.0/assets/apps/iptalk/home.chunk.js HTTP/1.1" 200 455583 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:08+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:08 +0000] "GET /devices/iptalk/getiptalktreenodebyid?id=custom HTTP/1.1" 200 228 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:08+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:08 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:08+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:08 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 258 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:08 +0000] "GET /devices/iptalk/getiptalkdevicelistbytreenodeid?treeNodeID=custom&type=1&newPage=1&pageSize=20 HTTP/1.1" 200 6242 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:56:09+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:56:09 +0000] "GET /build/1.0/assets/images/line_conn.a2649b.gif HTTP/1.1" 200 45 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:34+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:34 +0000] "GET /devices/iptalk/ HTTP/1.1" 200 326 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:34+0800 [INFO] delete websock TCP connect:9defcd67559b4fe08af766f2ea1199d8
+2017-09-29 14:58:34+0800 [INFO] websocket is disconnected.
+2017-09-29 14:58:34+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:34 +0000] "GET /build/1.0/assets/iptalk.bundle.js HTTP/1.1" 200 1641820 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:36+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 51885) .
+2017-09-29 14:58:36+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 14:58:36+0800 [INFO] websocket is connected.
+2017-09-29 14:58:36+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:36 +0000] "GET /devices/iptalk/getiptalktreenodebyid?id=custom HTTP/1.1" 200 228 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:36+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:36 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 83 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:36+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:36 +0000] "GET /build/1.0/assets/images/zTreeStandard.524f50.png HTTP/1.1" 200 11173 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:36+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:36 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 258 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:36+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:36 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:36+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:36 +0000] "GET /devices/iptalk/getiptalkdevicelistbytreenodeid?treeNodeID=custom&type=1&newPage=1&pageSize=20 HTTP/1.1" 200 6242 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:38+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:38 +0000] "GET /build/1.0/assets/apps/iptalk/config.chunk.js HTTP/1.1" 200 54638 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:38+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:38 +0000] "GET /build/1.0/assets/apps/iptalk/setting.chunk.js HTTP/1.1" 200 51590 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 14:58:38+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:06:58:38 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 134 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 15:00:54+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:07:00:53 +0000] "GET /build/1.0/assets/apps/iptalk/commander.chunk.js HTTP/1.1" 200 229727 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 15:00:54+0800 [INFO] "192.168.116.32" - - [29/Sep/2017:07:00:54 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 2722 "http://192.168.116.32:85/devices/iptalk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+2017-09-29 16:03:41+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4.4
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'device' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'deviceled' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'user' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'api_visitor' already exists")
+2017-09-29 16:03:42+0800 [INFO] (1050, "Table 'callstrategy' already exists")
+2017-09-29 16:03:42+0800 [INFO] TreeNode has been initialized
+2017-09-29 16:03:42+0800 [INFO] FeedBack has been initialized
+2017-09-29 16:03:42+0800 [INFO] Administrator has been initialized
+2017-09-29 16:03:42+0800 [INFO] Opened iptalk.db successfully
+2017-09-29 16:03:43+0800 [INFO] OrderFactory starting on 12200
+2017-09-29 16:03:43+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x000000000518BA88>
+2017-09-29 16:03:43+0800 [INFO] QueryFactory starting on 34952
+2017-09-29 16:03:43+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x0000000005217048>
+2017-09-29 16:03:43+0800 [INFO] AudioFactory starting on 3478
+2017-09-29 16:03:43+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x00000000052190C8>
+2017-09-29 16:03:43+0800 [INFO] VideoFactory starting on 3456
+2017-09-29 16:03:43+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x000000000521B4C8>
+2017-09-29 16:03:43+0800 [INFO] IPTalkWebSite starting on 85
+2017-09-29 16:03:43+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x000000000521B808>
+2017-09-29 16:03:43+0800 [INFO] WebSocketFactory starting on 89
+2017-09-29 16:03:43+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x000000000523CA08>
+2017-09-29 16:03:43+0800 [INFO] TCPPushFactory starting on 90
+2017-09-29 16:03:43+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x000000000523CF08>
+2017-09-29 16:03:43+0800 [INFO] SearchFactory starting on 3550
+2017-09-29 16:03:43+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x0000000005248408>
+2017-09-29 16:03:43+0800 [INFO] MyFTPFactory starting on 21
+2017-09-29 16:03:43+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x0000000005248788>
+2017-09-29 16:03:43+0800 [INFO] Connect form IPv4Address(TCP, '192.168.116.32', 53728) .
+2017-09-29 16:03:43+0800 [INFO] WebSocket keepAlive is on
+2017-09-29 16:03:43+0800 [INFO] websocket is connected.
+2017-09-29 18:03:44+0800 [INFO] delete websock TCP connect:5b24d52cb8af4096ba4733dac975fb0a
+2017-09-29 18:03:44+0800 [INFO] websocket is disconnected.

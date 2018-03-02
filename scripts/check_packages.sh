@@ -28,10 +28,12 @@ do
   #echo $r
   if ! [[ "${installed[@]}" =~ $r ]]
   then 
-  echo $r is not installed
-  # echo -e "\t" installing ... && \
-  # pip install $r && \
-  # echo -e "\t" $r is installed
+    echo $r is not installed
+    # echo -e "\t" installing ... && \
+    # pip install $r && \
+    # echo -e "\t" $r is installed
+  else
+    echo $r is installed
   fi
 done
 

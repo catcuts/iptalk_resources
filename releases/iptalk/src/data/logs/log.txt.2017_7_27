@@ -1,0 +1,487 @@
+2017-07-27 06:10:32+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'device' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-07-27 06:10:32+0800 [INFO] (1050, "Table 'user' already exists")
+2017-07-27 06:10:32+0800 [INFO] TreeNode has been initialized
+2017-07-27 06:10:32+0800 [INFO] FeedBack has been initialized
+2017-07-27 06:10:32+0800 [INFO] Administrator has been initialized
+2017-07-27 06:10:32+0800 [INFO] Opened iptalk.db successfully
+2017-07-27 06:10:33+0800 [INFO] OrderFactory starting on 12200
+2017-07-27 06:10:33+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x00000000046CFC08>
+2017-07-27 06:10:33+0800 [INFO] QueryFactory starting on 34952
+2017-07-27 06:10:33+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x000000000477B688>
+2017-07-27 06:10:33+0800 [INFO] AudioFactory starting on 3478
+2017-07-27 06:10:33+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x0000000004783408>
+2017-07-27 06:10:33+0800 [INFO] VideoFactory starting on 3456
+2017-07-27 06:10:33+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x0000000004783848>
+2017-07-27 06:10:33+0800 [INFO] IPTalkWebSite starting on 85
+2017-07-27 06:10:33+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x0000000004783B88>
+2017-07-27 06:10:33+0800 [INFO] WebSocketFactory starting on 89
+2017-07-27 06:10:33+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x0000000004795E48>
+2017-07-27 06:10:33+0800 [INFO] TCPPushFactory starting on 90
+2017-07-27 06:10:33+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x000000000479D608>
+2017-07-27 06:10:33+0800 [INFO] SearchFactory starting on 3550
+2017-07-27 06:10:33+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x000000000479DAC8>
+2017-07-27 06:10:33+0800 [INFO] PaxosFactory starting on 5453
+2017-07-27 06:10:33+0800 [INFO] Starting factory <devices.iptalk.paxos.paxostcp.PaxosFactory instance at 0x000000000479DE48>
+2017-07-27 06:10:33+0800 [INFO] MyFTPFactory starting on 21
+2017-07-27 06:10:33+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x00000000047A4308>
+2017-07-27 06:10:56+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 53441) .
+2017-07-27 06:10:56+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 06:10:56+0800 [INFO] websocket is connected.
+2017-07-27 06:12:14+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'device' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-07-27 06:12:14+0800 [INFO] (1050, "Table 'user' already exists")
+2017-07-27 06:12:14+0800 [INFO] TreeNode has been initialized
+2017-07-27 06:12:14+0800 [INFO] FeedBack has been initialized
+2017-07-27 06:12:14+0800 [INFO] Administrator has been initialized
+2017-07-27 06:12:14+0800 [INFO] Opened iptalk.db successfully
+2017-07-27 06:12:14+0800 [INFO] OrderFactory starting on 12200
+2017-07-27 06:12:14+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x00000000047DA908>
+2017-07-27 06:12:14+0800 [INFO] QueryFactory starting on 34952
+2017-07-27 06:12:14+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x000000000480D688>
+2017-07-27 06:12:14+0800 [INFO] AudioFactory starting on 3478
+2017-07-27 06:12:14+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x0000000004816408>
+2017-07-27 06:12:14+0800 [INFO] VideoFactory starting on 3456
+2017-07-27 06:12:14+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x0000000004816848>
+2017-07-27 06:12:14+0800 [INFO] IPTalkWebSite starting on 85
+2017-07-27 06:12:14+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x0000000004816B88>
+2017-07-27 06:12:14+0800 [INFO] WebSocketFactory starting on 89
+2017-07-27 06:12:14+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x0000000004828F48>
+2017-07-27 06:12:14+0800 [INFO] TCPPushFactory starting on 90
+2017-07-27 06:12:14+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x00000000048306C8>
+2017-07-27 06:12:14+0800 [INFO] SearchFactory starting on 3550
+2017-07-27 06:12:14+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x0000000004830B88>
+2017-07-27 06:12:14+0800 [INFO] PaxosFactory starting on 5453
+2017-07-27 06:12:14+0800 [INFO] Starting factory <devices.iptalk.paxos.paxostcp.PaxosFactory instance at 0x0000000004830F08>
+2017-07-27 06:12:14+0800 [INFO] MyFTPFactory starting on 21
+2017-07-27 06:12:14+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x00000000048393C8>
+2017-07-27 06:12:14+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 53565) .
+2017-07-27 06:12:14+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 06:12:14+0800 [INFO] websocket is connected.
+2017-07-27 06:12:18+0800 [INFO] delete websock TCP connect:31c1613da68f46fca162a7bb1817f9a5
+2017-07-27 06:12:18+0800 [INFO] websocket is disconnected.
+2017-07-27 06:12:21+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 53579) .
+2017-07-27 06:12:21+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 06:12:21+0800 [INFO] websocket is connected.
+2017-07-27 06:12:21+0800 [INFO] "127.0.0.1" - - [26/Jul/2017:22:12:20 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 06:12:22+0800 [INFO] "127.0.0.1" - - [26/Jul/2017:22:12:20 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:12:26+0800 [INFO] delete websock TCP connect:9a7cebf68a8040bcb33dfbb47eb27c3b
+2017-07-27 08:12:26+0800 [INFO] websocket is disconnected.
+2017-07-27 08:12:27+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 64685) .
+2017-07-27 08:12:27+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 08:12:27+0800 [INFO] websocket is connected.
+2017-07-27 08:51:43+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'device' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-07-27 08:51:44+0800 [INFO] (1050, "Table 'user' already exists")
+2017-07-27 08:51:44+0800 [INFO] TreeNode has been initialized
+2017-07-27 08:51:44+0800 [INFO] FeedBack has been initialized
+2017-07-27 08:51:44+0800 [INFO] Administrator has been initialized
+2017-07-27 08:51:44+0800 [INFO] Opened iptalk.db successfully
+2017-07-27 08:51:44+0800 [INFO] OrderFactory starting on 12200
+2017-07-27 08:51:44+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x000000000465EC08>
+2017-07-27 08:51:44+0800 [INFO] QueryFactory starting on 34952
+2017-07-27 08:51:44+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x000000000470D688>
+2017-07-27 08:51:44+0800 [INFO] AudioFactory starting on 3478
+2017-07-27 08:51:44+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x0000000004714408>
+2017-07-27 08:51:44+0800 [INFO] VideoFactory starting on 3456
+2017-07-27 08:51:44+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x0000000004714848>
+2017-07-27 08:51:44+0800 [INFO] IPTalkWebSite starting on 85
+2017-07-27 08:51:44+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x0000000004714B88>
+2017-07-27 08:51:44+0800 [INFO] WebSocketFactory starting on 89
+2017-07-27 08:51:44+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x0000000004725F08>
+2017-07-27 08:51:44+0800 [INFO] TCPPushFactory starting on 90
+2017-07-27 08:51:44+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x000000000472D6C8>
+2017-07-27 08:51:44+0800 [INFO] SearchFactory starting on 3550
+2017-07-27 08:51:44+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x000000000472DB88>
+2017-07-27 08:51:44+0800 [INFO] PaxosFactory starting on 5453
+2017-07-27 08:51:44+0800 [INFO] Starting factory <devices.iptalk.paxos.paxostcp.PaxosFactory instance at 0x000000000472DF08>
+2017-07-27 08:51:44+0800 [INFO] MyFTPFactory starting on 21
+2017-07-27 08:51:44+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x00000000047373C8>
+2017-07-27 08:51:47+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 52188) .
+2017-07-27 08:51:47+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 08:51:47+0800 [INFO] websocket is connected.
+2017-07-27 08:51:49+0800 [INFO] delete websock TCP connect:94c4c21554f04f729778c46f2ac55c50
+2017-07-27 08:51:49+0800 [INFO] websocket is disconnected.
+2017-07-27 08:51:51+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 52197) .
+2017-07-27 08:51:51+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 08:51:51+0800 [INFO] websocket is connected.
+2017-07-27 08:51:51+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:51:50 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:51:51+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:51:50 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:51:55+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:51:54 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:52:31+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:52:30 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:52:33+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:52:32 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:52:35+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:52:34 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:52:37+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:52:37 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:54:20+0800 [INFO] delete websock TCP connect:5686e68727fb4fe495d9f32a3eb5fcd7
+2017-07-27 08:54:20+0800 [INFO] websocket is disconnected.
+2017-07-27 08:54:22+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 52478) .
+2017-07-27 08:54:22+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 08:54:22+0800 [INFO] websocket is connected.
+2017-07-27 08:54:22+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:54:21 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:54:22+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:54:21 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:56:55+0800 [INFO] delete websock TCP connect:1436e0439a5b4ad389c6a7f306c57479
+2017-07-27 08:56:55+0800 [INFO] websocket is disconnected.
+2017-07-27 08:56:56+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 52711) .
+2017-07-27 08:56:56+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 08:56:56+0800 [INFO] websocket is connected.
+2017-07-27 08:56:56+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:56:56 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:56:56+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:56:56 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:59:28+0800 [INFO] delete websock TCP connect:90490d3d65f843c482dd314c92f4bb6a
+2017-07-27 08:59:28+0800 [INFO] websocket is disconnected.
+2017-07-27 08:59:30+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 52955) .
+2017-07-27 08:59:30+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 08:59:30+0800 [INFO] websocket is connected.
+2017-07-27 08:59:30+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:59:30 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 08:59:30+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:00:59:30 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:01:44+0800 [INFO] delete websock TCP connect:6ff8f1b6c5a64fdc8c05edef1c671594
+2017-07-27 09:01:44+0800 [INFO] websocket is disconnected.
+2017-07-27 09:01:45+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 53174) .
+2017-07-27 09:01:45+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:01:45+0800 [INFO] websocket is connected.
+2017-07-27 09:01:45+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:01:45 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:01:45+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:01:45 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:08+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:08 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=0&type=1 HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:08+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:08 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=0&type=1 HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:10+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:09 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=custom&level=2&type=1 HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:12+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:12 +0000] "GET /devices/iptalk/getiptalktreechildrenbyid?id=new&level=2&type=1 HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:18+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:17 +0000] "GET /devices/iptalk/getuserlist?newPage=1&pageSize=20 HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:18+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:17 +0000] "GET /devices/iptalk/getidentitys HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:22+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:22 +0000] "GET /devices/iptalk/getiptalkcallrecord?newPage=1&pageSize=20&startDate=1501084800&endDate=1501171200&device= HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:29+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:29 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:33+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:32 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:37+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:37 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:02:39+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:02:39 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:08+0800 [INFO] delete websock TCP connect:396d196b328f4d5888ba3f58d7603c41
+2017-07-27 09:11:08+0800 [INFO] websocket is disconnected.
+2017-07-27 09:11:10+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54075) .
+2017-07-27 09:11:10+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:11:10+0800 [INFO] websocket is connected.
+2017-07-27 09:11:10+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:09 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:10+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:10 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:26+0800 [INFO] delete websock TCP connect:7535fae3c4d54365b3df9d737e7d9ba6
+2017-07-27 09:11:26+0800 [INFO] websocket is disconnected.
+2017-07-27 09:11:27+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54104) .
+2017-07-27 09:11:27+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:11:27+0800 [INFO] websocket is connected.
+2017-07-27 09:11:28+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:27 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:36+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:35 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:43+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:42 +0000] "GET /devices/iptalk/getselfinfo HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:49+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:48 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:11:59+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54168) .
+2017-07-27 09:12:00+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:12:00+0800 [INFO] websocket is connected.
+2017-07-27 09:12:00+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:11:59 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:12:01+0800 [INFO] delete websock TCP connect:a4bb7d98e8564044845fccba40d2ea7d
+2017-07-27 09:12:01+0800 [INFO] websocket is disconnected.
+2017-07-27 09:12:06+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:12:06 +0000] "GET /upgrade/getCurrentVersion HTTP/1.1" 200 40 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:18:34+0800 [INFO] delete websock TCP connect:338b9f7216ed4d249efa9abc36a215bd
+2017-07-27 09:18:34+0800 [INFO] websocket is disconnected.
+2017-07-27 09:18:36+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54776) .
+2017-07-27 09:18:36+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:18:36+0800 [INFO] websocket is connected.
+2017-07-27 09:18:36+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:18:35 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:19:01+0800 [INFO] delete websock TCP connect:1b333b27637d4450b7d641000c576ec6
+2017-07-27 09:19:01+0800 [INFO] websocket is disconnected.
+2017-07-27 09:19:02+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54818) .
+2017-07-27 09:19:02+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:19:02+0800 [INFO] websocket is connected.
+2017-07-27 09:19:03+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:19:02 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:19:49+0800 [INFO] delete websock TCP connect:5b873bf1d35141fc9c1691b5e02e4daa
+2017-07-27 09:19:49+0800 [INFO] websocket is disconnected.
+2017-07-27 09:19:51+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54904) .
+2017-07-27 09:19:51+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:19:51+0800 [INFO] websocket is connected.
+2017-07-27 09:19:51+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:19:51 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:20:07+0800 [INFO] delete websock TCP connect:f5ab8aaf3fad4133b97d161406e4fe38
+2017-07-27 09:20:07+0800 [INFO] websocket is disconnected.
+2017-07-27 09:20:08+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 54936) .
+2017-07-27 09:20:08+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:20:08+0800 [INFO] websocket is connected.
+2017-07-27 09:20:08+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:20:08 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:20:08+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:20:08 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:20:26+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:20:25 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:20:34+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:20:33 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:20:40+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:20:40 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:20:43+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:01:20:43 +0000] "GET /config/sysconfig HTTP/1.1" 200 2643 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 09:25:06+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'device' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-07-27 09:25:06+0800 [INFO] (1050, "Table 'user' already exists")
+2017-07-27 09:25:06+0800 [INFO] TreeNode has been initialized
+2017-07-27 09:25:06+0800 [INFO] FeedBack has been initialized
+2017-07-27 09:25:06+0800 [INFO] Administrator has been initialized
+2017-07-27 09:25:06+0800 [INFO] Opened iptalk.db successfully
+2017-07-27 09:25:07+0800 [INFO] OrderFactory starting on 12200
+2017-07-27 09:25:07+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x000000000472DC08>
+2017-07-27 09:25:07+0800 [INFO] QueryFactory starting on 34952
+2017-07-27 09:25:07+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x00000000047D7688>
+2017-07-27 09:25:07+0800 [INFO] AudioFactory starting on 3478
+2017-07-27 09:25:07+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x00000000047E4408>
+2017-07-27 09:25:07+0800 [INFO] VideoFactory starting on 3456
+2017-07-27 09:25:07+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x00000000047E4848>
+2017-07-27 09:25:07+0800 [INFO] IPTalkWebSite starting on 85
+2017-07-27 09:25:07+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x00000000047E4B88>
+2017-07-27 09:25:07+0800 [INFO] WebSocketFactory starting on 89
+2017-07-27 09:25:07+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x00000000047F4FC8>
+2017-07-27 09:25:07+0800 [INFO] TCPPushFactory starting on 90
+2017-07-27 09:25:07+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x00000000047FE748>
+2017-07-27 09:25:07+0800 [INFO] SearchFactory starting on 3550
+2017-07-27 09:25:07+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x00000000047FEC08>
+2017-07-27 09:25:07+0800 [INFO] PaxosFactory starting on 5453
+2017-07-27 09:25:07+0800 [INFO] Starting factory <devices.iptalk.paxos.paxostcp.PaxosFactory instance at 0x00000000047FEF88>
+2017-07-27 09:25:07+0800 [INFO] MyFTPFactory starting on 21
+2017-07-27 09:25:07+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x0000000004807448>
+2017-07-27 09:25:07+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 55034) .
+2017-07-27 09:25:07+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:25:07+0800 [INFO] websocket is connected.
+2017-07-27 09:25:32+0800 [INFO] delete websock TCP connect:fe7d922aacd643b099f1edb060696424
+2017-07-27 09:25:32+0800 [INFO] websocket is disconnected.
+2017-07-27 09:25:33+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 55055) .
+2017-07-27 09:25:33+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 09:25:33+0800 [INFO] websocket is connected.
+2017-07-27 10:34:52+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'device' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-07-27 10:34:52+0800 [INFO] (1050, "Table 'user' already exists")
+2017-07-27 10:34:52+0800 [INFO] TreeNode has been initialized
+2017-07-27 10:34:52+0800 [INFO] FeedBack has been initialized
+2017-07-27 10:34:52+0800 [INFO] Administrator has been initialized
+2017-07-27 10:34:52+0800 [INFO] Opened iptalk.db successfully
+2017-07-27 10:34:53+0800 [INFO] OrderFactory starting on 12200
+2017-07-27 10:34:53+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x000000000471CC08>
+2017-07-27 10:34:53+0800 [INFO] QueryFactory starting on 34952
+2017-07-27 10:34:53+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x00000000047A7688>
+2017-07-27 10:34:53+0800 [INFO] AudioFactory starting on 3478
+2017-07-27 10:34:53+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x00000000047EF408>
+2017-07-27 10:34:53+0800 [INFO] VideoFactory starting on 3456
+2017-07-27 10:34:53+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x00000000047EF848>
+2017-07-27 10:34:53+0800 [INFO] IPTalkWebSite starting on 85
+2017-07-27 10:34:53+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x00000000047EFB88>
+2017-07-27 10:34:53+0800 [INFO] WebSocketFactory starting on 89
+2017-07-27 10:34:53+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x00000000047FEFC8>
+2017-07-27 10:34:53+0800 [INFO] TCPPushFactory starting on 90
+2017-07-27 10:34:53+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x0000000004808748>
+2017-07-27 10:34:53+0800 [INFO] SearchFactory starting on 3550
+2017-07-27 10:34:53+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x0000000004808C08>
+2017-07-27 10:34:53+0800 [INFO] PaxosFactory starting on 5453
+2017-07-27 10:34:53+0800 [INFO] Starting factory <devices.iptalk.paxos.paxostcp.PaxosFactory instance at 0x0000000004808F88>
+2017-07-27 10:34:53+0800 [INFO] MyFTPFactory starting on 21
+2017-07-27 10:34:53+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x0000000004811448>
+2017-07-27 10:34:53+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 56345) .
+2017-07-27 10:34:53+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 10:34:53+0800 [INFO] websocket is connected.
+2017-07-27 10:35:03+0800 [INFO] delete websock TCP connect:aff7c106ec634db79a8c38714a7cb413
+2017-07-27 10:35:03+0800 [INFO] websocket is disconnected.
+2017-07-27 10:35:04+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 56375) .
+2017-07-27 10:35:04+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 10:35:04+0800 [INFO] websocket is connected.
+2017-07-27 10:35:04+0800 [ERROR] Unhandled Error
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\protocols\basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "C:\Python27\lib\site-packages\twisted\web\http.py", line 1752, in lineReceived
+	    self.allContentReceived()
+	  File "C:\Python27\lib\site-packages\twisted\web\http.py", line 1845, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "C:\Python27\lib\site-packages\twisted\web\http.py", line 766, in requestReceived
+	    self.process()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\web\server.py", line 183, in process
+	    self.render(resrc)
+	  File "C:\Python27\lib\site-packages\twisted\web\server.py", line 234, in render
+	    body = resrc.render(self)
+	  File "C:\Python27\lib\site-packages\twisted\web\resource.py", line 250, in render
+	    return m(request)
+	  File "D:/Documents/catcuts/project/iot_combination\devices\iptalk\webmanager.py", line 415, in render_GET
+	    self.getNetConfig(request)
+	  File "D:/Documents/catcuts/project/iot_combination\devices\iptalk\webmanager.py", line 434, in getNetConfig
+	    systemController = systemControl("getNetworkConf")
+	exceptions.TypeError: __init__() takes exactly 8 arguments (2 given)
+	
+2017-07-27 10:35:04+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:02:35:04 +0000] "GET /config/netconfig HTTP/1.1" 500 5347 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 10:35:04+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:02:35:04 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+2017-07-27 10:39:35+0800 [INFO] Starting SmartTalk IoTService.Version is v0.4
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'device' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'devicepanel' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'deviceio' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'deviceaudiovideo' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'devicealarm' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'feedback' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'log_call' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'log_device' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'log_alarm' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'devicetree' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'authority' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'identity' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'authorization' already exists")
+2017-07-27 10:39:35+0800 [INFO] (1050, "Table 'user' already exists")
+2017-07-27 10:39:35+0800 [INFO] TreeNode has been initialized
+2017-07-27 10:39:35+0800 [INFO] FeedBack has been initialized
+2017-07-27 10:39:35+0800 [INFO] Administrator has been initialized
+2017-07-27 10:39:35+0800 [INFO] Opened iptalk.db successfully
+2017-07-27 10:39:35+0800 [INFO] OrderFactory starting on 12200
+2017-07-27 10:39:35+0800 [INFO] Starting factory <devices.iptalk.factory.OrderFactory instance at 0x000000000473CC08>
+2017-07-27 10:39:35+0800 [INFO] QueryFactory starting on 34952
+2017-07-27 10:39:35+0800 [INFO] Starting factory <devices.iptalk.factory.QueryFactory instance at 0x00000000047C8688>
+2017-07-27 10:39:35+0800 [INFO] AudioFactory starting on 3478
+2017-07-27 10:39:35+0800 [INFO] Starting protocol <devices.iptalk.factory.AudioFactory instance at 0x00000000047CF408>
+2017-07-27 10:39:35+0800 [INFO] VideoFactory starting on 3456
+2017-07-27 10:39:35+0800 [INFO] Starting protocol <devices.iptalk.factory.VideoFactory instance at 0x00000000047CF848>
+2017-07-27 10:39:35+0800 [INFO] IPTalkWebSite starting on 85
+2017-07-27 10:39:35+0800 [INFO] Starting factory <web.site.IPTalkWebSite instance at 0x00000000047398C8>
+2017-07-27 10:39:35+0800 [INFO] WebSocketFactory starting on 89
+2017-07-27 10:39:35+0800 [INFO] Starting factory <devices.iptalk.factory.WebSocketFactory instance at 0x00000000047E3648>
+2017-07-27 10:39:35+0800 [INFO] TCPPushFactory starting on 90
+2017-07-27 10:39:35+0800 [INFO] Starting factory <devices.iptalk.factory.TCPPushFactory instance at 0x00000000047E3DC8>
+2017-07-27 10:39:35+0800 [INFO] SearchFactory starting on 3550
+2017-07-27 10:39:35+0800 [INFO] Starting protocol <devices.iptalk.factory.SearchFactory instance at 0x00000000047F02C8>
+2017-07-27 10:39:35+0800 [INFO] PaxosFactory starting on 5453
+2017-07-27 10:39:35+0800 [INFO] Starting factory <devices.iptalk.paxos.paxostcp.PaxosFactory instance at 0x00000000047F0648>
+2017-07-27 10:39:36+0800 [INFO] MyFTPFactory starting on 21
+2017-07-27 10:39:36+0800 [INFO] Starting factory <devices.iptalk.ftp.MyFTPFactory instance at 0x00000000047F0AC8>
+2017-07-27 10:39:36+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 56430) .
+2017-07-27 10:39:36+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 10:39:36+0800 [INFO] websocket is connected.
+2017-07-27 10:39:40+0800 [INFO] delete websock TCP connect:00644c5565424fc1b775d1f5fc0e2b54
+2017-07-27 10:39:40+0800 [INFO] websocket is disconnected.
+2017-07-27 10:39:41+0800 [INFO] Connect form IPv4Address(TCP, '127.0.0.1', 56446) .
+2017-07-27 10:39:41+0800 [INFO] WebSocket keepAlive is on
+2017-07-27 10:39:41+0800 [INFO] websocket is connected.
+2017-07-27 10:39:41+0800 [ERROR] Unhandled Error
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\protocols\basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "C:\Python27\lib\site-packages\twisted\web\http.py", line 1752, in lineReceived
+	    self.allContentReceived()
+	  File "C:\Python27\lib\site-packages\twisted\web\http.py", line 1845, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "C:\Python27\lib\site-packages\twisted\web\http.py", line 766, in requestReceived
+	    self.process()
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\web\server.py", line 183, in process
+	    self.render(resrc)
+	  File "C:\Python27\lib\site-packages\twisted\web\server.py", line 234, in render
+	    body = resrc.render(self)
+	  File "C:\Python27\lib\site-packages\twisted\web\resource.py", line 250, in render
+	    return m(request)
+	  File "D:/Documents/catcuts/project/iot_combination\devices\iptalk\webmanager.py", line 415, in render_GET
+	    self.getNetConfig(request)
+	  File "D:/Documents/catcuts/project/iot_combination\devices\iptalk\webmanager.py", line 435, in getNetConfig
+	    deferToThread(systemController.execute()).addCallback(getConfigCallBack)
+	  File "D:/Documents/catcuts/project/iot_combination\utils\syscontrol.py", line 210, in execute
+	    self.getNetworkConf() #返回json object
+	  File "D:/Documents/catcuts/project/iot_combination\utils\syscontrol.py", line 185, in getNetworkConf
+	    networkConf[dev]["dns_prefer"] = ""
+	exceptions.UnboundLocalError: local variable 'dev' referenced before assignment
+	
+2017-07-27 10:39:42+0800 [ERROR] Unhandled Error
+	Traceback (most recent call last):
+	  File "C:\Python27\lib\site-packages\twisted\web\server.py", line 319, in processingFailed
+	    util.formatFailure(reason) +
+	  File "C:\Python27\lib\site-packages\twisted\web\util.py", line 432, in formatFailure
+	    flattenString(None, FailureElement(myFailure)).addBoth(result.append)
+	  File "C:\Python27\lib\site-packages\twisted\web\_flatten.py", line 410, in flattenString
+	    d = flatten(request, root, io.write)
+	  File "C:\Python27\lib\site-packages\twisted\web\_flatten.py", line 392, in flatten
+	    _writeFlattenedData(state, write, result)
+	--- <exception caught here> ---
+	  File "C:\Python27\lib\site-packages\twisted\web\_flatten.py", line 353, in _writeFlattenedData
+	    element = next(state)
+	  File "C:\Python27\lib\site-packages\twisted\web\_flatten.py", line 321, in _flattenTree
+	    raise FlattenerError(e, roots, extract_tb(exc_info()[2]))
+	twisted.web.error.FlattenerError: Exception while flattening:
+	  <twisted.web.util.FailureElement object at 0x000000000480ADA0>
+	  [Tag(u'div', children=[u'\n', u'  ', Tag(u'style', attributes=OrderedDict([(u'type', u'text/css')]), children=[u'\n', u'    div.error {', u'\n', u'      color: red;', u'\n', u'      font-family: Verdana, Arial, helvetica, sans-serif;', u'\n', u'      font-weight: bold;', u'\n', u'    }', u'\n', u'\n', u'    div {', u'\n', u'      font-family: Verdana, Arial, helvetica, sans-serif;', u'\n', u'    }', u'\n', u'\n', u'    div.stackTrace {', u'\n', u'    }', u'\n', u'\n', u'    div.frame {', u'\n', u'      padding: 1em;', u'\n', u'      background: white;', u'\n', u'      border-bottom: thin black dashed;', u'\n', u'    }', u'\n', u'\n', u'    div.frame:first-child {', u'\n', u'      padding: 1em;', u'\n', u'      background: white;', u'\n', u'      border-top: thin black dashed;', u'\n', u'      border-bottom: thin black dashed;', u'\n', u'    }', u'\n', u'\n', u'    div.location {', u'\n', u'    }', u'\n', u'\n', u'    span.function {', u'\n', u'      font-weight: bold;', u'\n', u'      font-family: "Courier New", courier, monospace;', u'\n', u'    }', u'\n', u'\n', u'    div.snippet {', u'\n', u'      margin-bottom: 0.5em;', u'\n', u'      margin-left: 1em;', u'\n', u'      background: #FFFFDD;', u'\n', u'    }', u'\n', u'\n', u'    div.snippetHighlightLine {', u'\n', u'      color: red;', u'\n', u'    }', u'\n', u'\n', u'    span.code {', u'\n', u'      font-family: "Courier New", courier, monospace;', u'\n', u'    }', u'\n', u'  ']), u'\n', u'\n', u'  ', Tag(u'div', attributes=OrderedDict([(u'class', u'error')]), children=[u'\n', u'    ', Tag(u'span'), u': ', Tag(u'span'), u'\n', u'  ']), u'\n', u'  ', Tag(u'div', attributes=OrderedDict([(u'class', u'stackTrace')]), children=[u'\n', u'    ', Tag(u'div', attributes=OrderedDict([(u'class', u'frame')]), children=[u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'location')]), children=[u'\n', u'        ', Tag(u'span'), u':', Tag(u'span'), u' in', u'\n', u'        ', Tag(u'span', attributes=OrderedDict([(u'class', u'function')])), u'\n', u'      ']), u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']), u'\n', u'    ']), u'\n', u'  ']), u'\n', u'  ', Tag(u'div', attributes=OrderedDict([(u'class', u'error')]), children=[u'\n', u'    ', Tag(u'span'), u': ', Tag(u'span'), u'\n', u'  ']), u'\n'])]
+	  Tag <div>
+	  [u'\n', u'  ', Tag(u'style', attributes=OrderedDict([(u'type', u'text/css')]), children=[u'\n', u'    div.error {', u'\n', u'      color: red;', u'\n', u'      font-family: Verdana, Arial, helvetica, sans-serif;', u'\n', u'      font-weight: bold;', u'\n', u'    }', u'\n', u'\n', u'    div {', u'\n', u'      font-family: Verdana, Arial, helvetica, sans-serif;', u'\n', u'    }', u'\n', u'\n', u'    div.stackTrace {', u'\n', u'    }', u'\n', u'\n', u'    div.frame {', u'\n', u'      padding: 1em;', u'\n', u'      background: white;', u'\n', u'      border-bottom: thin black dashed;', u'\n', u'    }', u'\n', u'\n', u'    div.frame:first-child {', u'\n', u'      padding: 1em;', u'\n', u'      background: white;', u'\n', u'      border-top: thin black dashed;', u'\n', u'      border-bottom: thin black dashed;', u'\n', u'    }', u'\n', u'\n', u'    div.location {', u'\n', u'    }', u'\n', u'\n', u'    span.function {', u'\n', u'      font-weight: bold;', u'\n', u'      font-family: "Courier New", courier, monospace;', u'\n', u'    }', u'\n', u'\n', u'    div.snippet {', u'\n', u'      margin-bottom: 0.5em;', u'\n', u'      margin-left: 1em;', u'\n', u'      background: #FFFFDD;', u'\n', u'    }', u'\n', u'\n', u'    div.snippetHighlightLine {', u'\n', u'      color: red;', u'\n', u'    }', u'\n', u'\n', u'    span.code {', u'\n', u'      font-family: "Courier New", courier, monospace;', u'\n', u'    }', u'\n', u'  ']), u'\n', u'\n', u'  ', Tag(u'div', attributes=OrderedDict([(u'class', u'error')]), children=[u'\n', u'    ', Tag(u'span'), u': ', Tag(u'span'), u'\n', u'  ']), u'\n', u'  ', Tag(u'div', attributes=OrderedDict([(u'class', u'stackTrace')]), children=[u'\n', u'    ', Tag(u'div', attributes=OrderedDict([(u'class', u'frame')]), children=[u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'location')]), children=[u'\n', u'        ', Tag(u'span'), u':', Tag(u'span'), u' in', u'\n', u'        ', Tag(u'span', attributes=OrderedDict([(u'class', u'function')])), u'\n', u'      ']), u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']), u'\n', u'    ']), u'\n', u'  ']), u'\n', u'  ', Tag(u'div', attributes=OrderedDict([(u'class', u'error')]), children=[u'\n', u'    ', Tag(u'span'), u': ', Tag(u'span'), u'\n', u'  ']), u'\n']
+	  Tag <div>
+	  <twisted.web.util._StackElement object at 0x00000000048CB198>
+	  [Tag(u'div', attributes=OrderedDict([(u'class', u'stackTrace')]), children=[u'\n', u'    ', Tag(u'div', attributes=OrderedDict([(u'class', u'frame')]), children=[u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'location')]), children=[u'\n', u'        ', Tag(u'span'), u':', Tag(u'span'), u' in', u'\n', u'        ', Tag(u'span', attributes=OrderedDict([(u'class', u'function')])), u'\n', u'      ']), u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']), u'\n', u'    ']), u'\n', u'  '])]
+	  Tag <div>
+	  [u'\n', u'    ', Tag(u'div', attributes=OrderedDict([(u'class', u'frame')]), children=[u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'location')]), children=[u'\n', u'        ', Tag(u'span'), u':', Tag(u'span'), u' in', u'\n', u'        ', Tag(u'span', attributes=OrderedDict([(u'class', u'function')])), u'\n', u'      ']), u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']), u'\n', u'    ']), u'\n', u'  ']
+	  Tag <div>
+	  [<twisted.web.util._FrameElement object at 0x00000000048CB668>, <twisted.web.util._FrameElement object at 0x00000000048CB8D0>, <twisted.web.util._FrameElement object at 0x00000000048CBB38>, <twisted.web.util._FrameElement object at 0x00000000048CBDA0>, <twisted.web.util._FrameElement object at 0x000000000490C048>, <twisted.web.util._FrameElement object at 0x000000000490C2B0>, <twisted.web.util._FrameElement object at 0x000000000490C518>]
+	  <twisted.web.util._FrameElement object at 0x000000000490C2B0>
+	  [Tag(u'div', attributes=OrderedDict([(u'class', u'frame')]), children=[u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'location')]), children=[u'\n', u'        ', Tag(u'span'), u':', Tag(u'span'), u' in', u'\n', u'        ', Tag(u'span', attributes=OrderedDict([(u'class', u'function')])), u'\n', u'      ']), u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']), u'\n', u'    '])]
+	  Tag <div>
+	  [u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'location')]), children=[u'\n', u'        ', Tag(u'span'), u':', Tag(u'span'), u' in', u'\n', u'        ', Tag(u'span', attributes=OrderedDict([(u'class', u'function')])), u'\n', u'      ']), u'\n', u'      ', Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']), u'\n', u'    ']
+	  Tag <div>
+	  <twisted.web.util._SourceFragmentElement object at 0x000000000490C710>
+	  [Tag(u'div', attributes=OrderedDict([(u'class', u'snippet')]), children=[u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      '])]
+	  Tag <div>
+	  [u'\n', u'        ', Tag(u'div', children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']), u'\n', u'      ']
+	  Tag <div>
+	  <generator object sourceLines at 0x0000000004917708>
+	  <twisted.web.util._SourceLineElement object at 0x000000000490CDD8>
+	  [Tag(u'div', attributes=OrderedDict([('class', 'snippetHighlightLine')]), children=[u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        '])]
+	  Tag <div>
+	  [u'\n', u'          ', Tag(u'span', attributes=OrderedDict([(u'class', u'lineno')])), u'\n', u'          ', Tag(u'code', attributes=OrderedDict([(u'class', u'code')])), u'\n', u'        ']
+	  Tag <code>
+	  File "C:\Python27\lib\site-packages\twisted\web\_flatten.py", line 312, in _flattenTree
+	    element = next(stack[-1])
+	  File "C:\Python27\lib\site-packages\twisted\web\_flatten.py", line 231, in _flattenElement
+	    result = renderMethod(request, rootClone)
+	  File "C:\Python27\lib\site-packages\twisted\web\util.py", line 171, in sourceLine
+	    return tag(self.source.replace('  ', u' \N{NO-BREAK SPACE}'))
+	UnicodeDecodeError: 'ascii' codec can't decode byte 0xe8 in position 35: ordinal not in range(128)
+	
+	
+2017-07-27 10:39:42+0800 [INFO] "127.0.0.1" - - [27/Jul/2017:02:39:42 +0000] "GET /devices/iptalk/getiptalkdevicemessage HTTP/1.1" 200 122 "http://127.0.0.1:3000/build/1.0/iptalk.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
