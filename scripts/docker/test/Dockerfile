@@ -1,6 +1,6 @@
 # Dockerfile
 
-FROM debian:aptgetupdated
+FROM debian:latest
 
 ENV \
     MYSQL_HOST="127.0.0.1" \
@@ -9,13 +9,13 @@ ENV \
     MYSQL_USERNAME="root" \
     MYSQL_PASSWORD="root"
 
-COPY ./iptalk.zip /home/pi/
-COPY ./start.sh /home/tmp/
+ADD ./iptalk.tar /home/pi/
+COPY ./start.sh /home/pi/start/
 
 RUN \
 
 # install all system dependencies
-apt-get install -y unzip \
+apt-get update && install -y unzip \
 
 # mkdir all will be used
     mkdir -p \
@@ -30,8 +30,8 @@ apt-get install -y unzip \
     # sudo timedatectl set-timezone Asia/Chongqing && \
 
 # extract iptalk server code into /home/pi/src
-    unzip /home/pi/iptalk.zip -d /home/pi/src \
-    cp /home/pi/src/data/* /home/pi/tmp/data \
-    cp /home/pi/src/settings/* /home/pi/tmp/settings 
+    # unzip /home/pi/iptalk.zip -d /home/pi/src \
+    cp -r /home/pi/src/data/* /home/pi/tmp/data && \
+    cp -r /home/pi/src/settings/* /home/pi/tmp/settings 
 
-CMD ["bash", "/home/tmp/start.sh"]
+CMD ["bash", "/home/pi/start/start.sh"]

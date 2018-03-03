@@ -14,7 +14,7 @@
 #         [-v /path@host/to/settings_folder:/home/pi/src/settings] \
 #         [-v /path@host/to/data_folder:/home/pi/src/data]
 #         <image_name:tag>
-#         [extra_commands]
+#         # extra_commands is not allowed
 #     示例:
 #         docker run -it \
 #         -p 21:21 \
@@ -33,8 +33,7 @@
 #         --link rdcenter-mysql --name iptalk \
 #         -v /home/iptalk/settings:/home/pi/src/settings \
 #         -v /home/iptalk/data:/home/pi/src/data \
-#         iptalk:latest \
-#         /bin/sh -c 'echo meow && bash'
+#         iptalk:latest
 #     停止:
 #         docker stop <container_name>
 #         docker rm <container_name>
@@ -44,15 +43,15 @@
 
 FROM debian:latest
 
-ENV \
-    MYSQL_HOST="127.0.0.1" \
-    MYSQL_PORT=3306 \
-    IPTALK_DATABASE="iptalk" \
-    MYSQL_USERNAME="root" \
-    MYSQL_PASSWORD="root"
+# ENV \
+#     MYSQL_HOST="127.0.0.1" \
+#     MYSQL_PORT=3306 \
+#     IPTALK_DATABASE="iptalk" \
+#     MYSQL_USERNAME="root" \
+#     MYSQL_PASSWORD="root"
 
 COPY ./iptalk.zip /home/pi/
-COPY ./start.sh /home/tmp/
+COPY ./start.sh /home/pi/start/
 
 RUN \
 # install all system dependencies
@@ -144,12 +143,12 @@ do \
 done && \
 
 # extract iptalk server code into /home/pi/src
-    unzip /home/pi/iptalk.zip -d /home/pi/src \
-    cp /home/pi/src/data/* /home/pi/tmp/data \
+    unzip /home/pi/iptalk.zip -d /home/pi/src && \
+    cp /home/pi/src/data/* /home/pi/tmp/data && \
     cp /home/pi/src/settings/* /home/pi/tmp/settings
 
 # volume data file to anonyous
 # VOLUME /home/pi/src/data
 # VOLUME /home/pi/src/settings
 
-CMD ["bash", "/home/tmp/start.sh", "-e" ]  # will be replaced if specified cmd when docker run image <cmd>
+CMD ["bash", "/home/pi/start/start.sh", "-e" ]  # will be replaced if specified cmd when docker run image <cmd>

@@ -1,0 +1,50 @@
+
+一、第一种方法(源码和运行环境被构建到镜像中)
+
+    前传: 构建 iptalk 镜像
+        1. 预备资源
+            1) iptalk_src.zip: iptalk 源码 (结构为 iptalk_src.zip/src/**/*)
+            2) Dockerfile
+            3) start.sh
+        2. 构建
+            运行 build.sh[ -f <docker_file_path>][ -t <img_name:tag>]
+            date=...
+            docker_file=./Dockerfile
+            image_id=iptalk:$date
+            其内容为: docker build -f $docker_file -t $image_id .
+
+    1. 安装 docker
+        install_docker.sh
+        其内容为: (暂略)
+
+    2. 预备资源
+        1) iptalk_img.zip: iptalk 镜像归档
+
+    3. 运行/重启 iptalk
+        start_iptalk_system.sh
+        其内容为: bash start_iptalk_mysql.sh && bash start_iptalk.sh
+        包括两部分: 
+        1) 运行/重启 mysql 容器
+            start_iptalk_mysql.sh
+            其内容为: (暂略)
+
+        2) 运行/重启 iptalk 容器
+            start_iptalk.sh
+            其内容为: (暂略)
+
+二、第二种方法(仅运行环境被构建到镜像中, 源码在运行容器前放入, 运行时指定源码位置)
+
+    0. 构建 iptalk 镜像
+        
+
+    1. 安装 docker
+    (略)
+
+    2. 预备资源
+        1) iptalk_src.zip: iptalk 源码 (结构为 iptalk_src.zip/src/**/*)
+        2) iptalk_img.zip: iptalk 镜像归档
+
+
+    3. 运行 mysql 容器
+
+    4. 运行 iptalk 容器
