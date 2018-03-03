@@ -149,7 +149,7 @@ RUN \
     done && \
 
 # extract iptalk server code into /home/pi/src
-    unzip /home/pi/iptalk.zip -d /home/pi/src && \
+    # unzip /home/pi/iptalk.zip -d /home/pi/src && \
     cp /home/pi/src/data/* /home/pi/tmp/data && \
     cp /home/pi/src/settings/* /home/pi/tmp/settings
 

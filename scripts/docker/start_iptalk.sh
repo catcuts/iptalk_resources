@@ -5,7 +5,7 @@ if [ $? -ne 0 ]
 then
     echo -e "\tdocker service is starting ..."
     service docker start
-    echo -e "\tdocker service started"
+    echo -e "\tdocker service started."
 fi && \
 echo -e "\tiptalk stopping ..."
 docker stop iptalk > /etc/null 2>&1
@@ -28,5 +28,4 @@ docker run -it \
 -v /home/iptalk/data:/home/pi/src/data \
 -v /home/iptalk/settings:/home/pi/src/settings \
 --link iptalk-mysql \
---name iptalk iptalk:20180227 \
-/bin/sh -c '/usr/sbin/sshd -D & sudo service mysql start > /home/pi/log.txt 2>&1 && python /home/pi/src/test.py'
+--name iptalk iptalk:20180227
