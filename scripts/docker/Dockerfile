@@ -46,6 +46,7 @@ FROM debian:latest
 ARG iptalk_src=./iptalk.zip
 ARG start_script=./start.sh
 ARG TZ=Asia/Shanghai
+ARG ffmpeg_static=./ffmpeg-release-64bit-static.tar.xz
 
 # ENV \
 #     MYSQL_HOST="127.0.0.1" \
@@ -54,8 +55,9 @@ ARG TZ=Asia/Shanghai
 #     MYSQL_USERNAME="root" \
 #     MYSQL_PASSWORD="root"
 
-COPY $iptalk_src /home/pi/
+# COPY $iptalk_src /home/pi/
 COPY $start_script /home/pi/start/
+ADD $ffmpeg_static /home/pi/pkgs/
 
 RUN \
 # install all system dependencies
@@ -78,8 +80,6 @@ RUN \
 # mkdir all will be used
     mkdir -p \
         /home/pi/src \
-        /home/pi/pkgs \
-        /home/pi/ffmpeg \
         /home/pi/tmp/data \
         /home/pi/tmp/settings && \
 
@@ -88,11 +88,11 @@ RUN \
     # echo "TZ='Asia/Shanghai'; export TZ" >> /root/.profile && \
     # sudo timedatectl set-timezone Asia/Chongqing && \
 
-# fetch and extract the ffmpeg into /home/pi then move to /home/pi/ffmpeg    
-    cd /home/pi/pkgs && \
-    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz && \
-    tar -Jxf ffmpeg-release-64bit-static.tar.xz && \
-    mv ffmpeg-3.4.1-64bit-static /home/pi/ffmpeg && \
+# fetch and extract the ffmpeg into /home/pi then move to /home/pi/ffmpeg  
+    # cd /home/pi/pkgs && \
+    # wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz && \
+    # tar -Jxf ffmpeg-release-64bit-static.tar.xz && \
+    mv /home/pi/pkgs/ffmpeg-3.4.2-64bit-static /home/pi/ffmpeg && \
 
 # install python packages
     # install pip alongwith setup-tools
@@ -145,12 +145,12 @@ RUN \
         zope.interface>=4.2.0' | while read pkg; \
     do \
         pip install $pkg -i http://pypi.douban.com/simple --trusted-host pypi.douban.com; \
-    done && \
+    done
 
 # extract iptalk server code into /home/pi/src
-    unzip /home/pi/iptalk.zip -d /home/pi/src && \
-    cp /home/pi/src/data/* /home/pi/tmp/data && \
-    cp /home/pi/src/settings/* /home/pi/tmp/settings
+    # unzip /home/pi/iptalk.zip -d /home/pi/src && \
+    # cp /home/pi/src/data/* /home/pi/tmp/data && \
+    # cp /home/pi/src/settings/* /home/pi/tmp/settings
 
 # volume data file to anonyous
 # VOLUME /home/pi/src/data

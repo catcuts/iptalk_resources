@@ -27,9 +27,9 @@ docker run -it \
 -p 34955:34955 \
 -v /home/iptalk/start:/home/pi/start \
 -v /home/iptalk:/home/pi/src \
--e MYSQL_HOST=rdcenter-mysql \
+-e MYSQL_HOST=iptalk-mysql \
 -e MYSQL_PORT=3306 \
 -e MYSQL_USERNAME=root \
--e MYSQL_PASSWORD=HytHyt1224 \
+-e MYSQL_PASSWORD=root \
 --link iptalk-mysql \
 --name iptalk iptalk:v2

@@ -28,4 +28,4 @@ docker run -it \
 -v /home/iptalk/data:/home/pi/src/data \
 -v /home/iptalk/settings:/home/pi/src/settings \
 --link iptalk-mysql \
---name iptalk iptalk:v1
+--name iptalk iptalk:v2

@@ -6,8 +6,6 @@
 # cp -rn /home/pi/tmp/data/* /home/pi/src/data
 # cp -rn /home/pi/tmp/settings/* /home/pi/src/settings
 
-# pip install peewee==2.10.2 && \  # if encountering peewee backward compatibility
-
 setting_file=/home/pi/src/settings/default.ini
 
 if [[ $MYSQL_HOST ]]; then
