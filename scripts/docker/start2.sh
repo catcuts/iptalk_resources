@@ -1,10 +1,12 @@
 #!/usr/bin/bash
 
-#awk 'BEGIN { cmd="cp -ri /home/pi/tmp/data/* /home/pi/src/data"; print "n" |cmd; }'
-#awk 'BEGIN { cmd="cp -ri /home/pi/tmp/settings/* /home/pi/src/settings"; print "n" |cmd; }'
+# awk 'BEGIN { cmd="cp -ri /home/pi/tmp/data/* /home/pi/src/data"; print "n" |cmd; }'
+# awk 'BEGIN { cmd="cp -ri /home/pi/tmp/settings/* /home/pi/src/settings"; print "n" |cmd; }'
 
-cp -rn /home/pi/tmp/data/* /home/pi/src/data
-cp -rn /home/pi/tmp/settings/* /home/pi/src/settings
+# cp -rn /home/pi/tmp/data/* /home/pi/src/data
+# cp -rn /home/pi/tmp/settings/* /home/pi/src/settings
+
+# pip install peewee==2.10.2 && \  # if encountering peewee backward compatibility
 
 setting_file=/home/pi/src/settings/default.ini
 
@@ -28,7 +30,7 @@ if [[ $MYSQL_PASSWORD ]]; then
     sed -in "s/^password\s*=\s*.*/password = $MYSQL_PASSWORD/" $setting_file
 fi
 
-mkdir -p /var/run/sshd > /etc/null && \
+mkdir -p /var/run/sshd > /dev/null && \
 /usr/sbin/sshd -D & \
 sudo service mysql start > /home/pi/log.txt 2>&1 && \
 python /home/pi/src/iptalk.py

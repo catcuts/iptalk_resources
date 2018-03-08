@@ -43,10 +43,9 @@
 
 FROM debian:latest
 
-ARG \
-    iptalk_src=./iptalk.zip \
-    start_script=./start.sh \
-    TZ=Asia/Shanghai
+ARG iptalk_src=./iptalk.zip
+ARG start_script=./start.sh
+ARG TZ=Asia/Shanghai
 
 # ENV \
 #     MYSQL_HOST="127.0.0.1" \
@@ -85,7 +84,7 @@ RUN \
         /home/pi/tmp/settings && \
 
 # correct the time zone
-    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     # echo "TZ='Asia/Shanghai'; export TZ" >> /root/.profile && \
     # sudo timedatectl set-timezone Asia/Chongqing && \
 
@@ -124,7 +123,7 @@ RUN \
         mccabe>=0.6.1\n\
         MySQL-python>=1.2.5\n\
         optionaldict>=0.1.1\n\
-        peewee>=2.8.5\n\
+        peewee==2.10.2\n\
         pyasn1>=0.3.2\n\
         pyasn1-modules>=0.0.9\n\
         pycparser>=2.18\n\
@@ -157,4 +156,4 @@ RUN \
 # VOLUME /home/pi/src/data
 # VOLUME /home/pi/src/settings
 
-CMD ["bash", "/home/pi/start/start.sh", "-e" ]  # will be replaced if specified cmd when docker run image <cmd>
+CMD ["bash", "/home/pi/start/start.sh"]  # will be replaced if specified cmd when docker run image <cmd>

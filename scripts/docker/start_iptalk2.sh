@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-docker ps > /etc/null
+docker ps > /dev/null
 if [ $? -ne 0 ]
 then
     echo -e "\tdocker service is starting ..."
@@ -8,8 +8,8 @@ then
     echo -e "\tdocker service started."
 fi && \
 echo -e "\tiptalk stopping ..."
-docker stop iptalk > /etc/null 2>&1
-docker rm iptalk > /etc/null 2>&1
+docker stop iptalk > /dev/null 2>&1
+docker rm iptalk > /dev/null 2>&1
 echo -e "\tiptalk restarting ..."
 docker run -it \
 -p 21:21 \
@@ -25,6 +25,11 @@ docker run -it \
 -p 13980:13980 \
 -p 34952:34952 \
 -p 34955:34955 \
+-v /home/iptalk/start:/home/pi/start \
 -v /home/iptalk:/home/pi/src \
+-e MYSQL_HOST=rdcenter-mysql \
+-e MYSQL_PORT=3306 \
+-e MYSQL_USERNAME=root \
+-e MYSQL_PASSWORD=HytHyt1224 \
 --link iptalk-mysql \
---name iptalk iptalk:20180227
+--name iptalk iptalk:v2

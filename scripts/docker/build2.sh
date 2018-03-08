@@ -26,6 +26,7 @@ done
 if [ -z $image_id ]; then
     echo "need image_id !"
     exit 1
+fi
 
 echo -e "\tdocker_file: $docker_file\n" \
         "\timage_id   : $image_id\n" \

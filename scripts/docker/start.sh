@@ -28,7 +28,7 @@ if [[ $MYSQL_PASSWORD ]]; then
     sed -in "s/^password\s*=\s*.*/password = $MYSQL_PASSWORD/" $setting_file
 fi
 
-mkdir -p /var/run/sshd > /etc/null && \
+mkdir -p /var/run/sshd > /dev/null && \
 /usr/sbin/sshd -D & \
 sudo service mysql start > /home/pi/log.txt 2>&1 && \
 python /home/pi/src/iptalk.py
